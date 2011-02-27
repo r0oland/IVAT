@@ -1,0 +1,14 @@
+- find correct value instead of 99999999 used in valueChanger
+  --> rausfinden wo es am engsten wird
+  
+- aus den ZeitArrays Structs machen
+
+#include <stdint.h> -> keine unsigned long mehr verwenden
+
+test new functions time_printer & find_first_entry
+
+Zeit zum fokussieren manuell einstellbar mit gutem Standartwert und abfangen 
+  das Intervall kürzer gewählt als Auslösezeit + Fokuszeit, bei option manueller
+  foukus -> Fokuszeit auf 0 setzten 
+  
+Delay muss größer sein als Fokuszeit, dammit erstes Bild exakt geschossen wird
