@@ -5,25 +5,16 @@
 
 LiquidCrystal lcd(7, 5, 4, 3, 2, 1);
 
-struct my_time
-{
-	DWORD raw;
-	DWORD days;
-	DWORD hours;
-	DWORD minutes;
-	DWORD seconds;
-	int changed;
-};
-
 DWORD amount = START_AMOUNT; //number of pictures that should be taken
 DWORD currentAmount = 0; //number of pictures allready taken
 
 ///MAIN///
 int main()
 {
-	//Initialize the Arduino library
+	//initialize the Arduino library
 	init();
 
+	//initialize lcd display
 	lcd.begin(16, 2);
 
 	pinMode(TRIGGER_PIN, OUTPUT);
@@ -33,12 +24,15 @@ int main()
 	pinMode(LEFT, INPUT);
 	pinMode(RIGHT, INPUT);
 
-	print_lcd(&lcd);
+	//display the default setting in overview state
+	print_lcd(&lcd); //
 
-	byte main_state = 0;
+	all_times my_times;
+	init_my_times(&my_times);
+
 	while (true)
 	{
-		control_state(&main_state);
+		control_state(&my_states, &my_times);
 	}
 	return 0;
 }

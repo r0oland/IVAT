@@ -64,7 +64,7 @@ all: Blink.elf secondary-outputs
 Blink.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C++ Linker'
-	avr-g++ -Wl,-Map,Blink.map,--cref -Wl,-gc-sections -L"/home/r0oland/workspace/Arduino/Release" -mmcu=atmega328p -o"Blink.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-g++ -Wl,-Map,Blink.map,--cref -Wl,-gc-sections -L"/home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release" -mmcu=atmega328p -o"Blink.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

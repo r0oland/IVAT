@@ -9,9 +9,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir.mk
--include Blink/subdir.mk
--include Blink/Release/subdir.mk
--include Blink/Debug/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

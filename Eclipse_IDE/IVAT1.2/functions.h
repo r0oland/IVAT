@@ -13,6 +13,9 @@
 #define FUNCTIONS_H_
 
 void print_lcd(LiquidCrystal* lcd);
-void control_state(byte *main_state);
+void control_state(state *my_states, all_times *my_times);
+void control_config(state *my_states, all_times *my_times);
+void change_config_state(state *my_states, byte direction, DWORD *delay);
+void init_my_times(all_times *my_times);
 
 #endif /* FUNCTIONS_H_ */

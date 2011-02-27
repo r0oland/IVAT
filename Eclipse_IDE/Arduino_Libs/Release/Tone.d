@@ -1,9 +1,10 @@
-Tone.d Tone.o: ../Tone.cpp /home/r0oland/workspace/Arduino/wiring.h \
-  /home/r0oland/workspace/Arduino/binary.h \
-  /home/r0oland/workspace/Arduino/pins_arduino.h
+Tone.d Tone.o: ../Tone.cpp \
+  /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/wiring.h \
+  /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/binary.h \
+  /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/pins_arduino.h
 
-/home/r0oland/workspace/Arduino/wiring.h:
+/home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/wiring.h:
 
-/home/r0oland/workspace/Arduino/binary.h:
+/home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/binary.h:
 
-/home/r0oland/workspace/Arduino/pins_arduino.h:
+/home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/pins_arduino.h:
