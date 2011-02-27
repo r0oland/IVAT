@@ -1,5 +1,4 @@
 #include "functions.h"
-#include "macros.h"
 
 //---------> printLcd <------------------------
 //handles output on lcd display
@@ -9,12 +8,11 @@ void print_lcd(LiquidCrystal* lcd)
 
 }
 
-void control_state(byte *global_state_)
+void control_state(byte *main_state)
 {
-	switch (*global_state_)
+	switch (*main_state)
 	{
 		case CONFIG_STATE:
-
 			break;
 		default:
 			break;

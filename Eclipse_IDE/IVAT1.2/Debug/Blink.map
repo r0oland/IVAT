@@ -218,7 +218,7 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x4fba
+.text           0x0000000000000000     0x4fbe
  *(.vectors)
  .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
                 0x0000000000000000                __vectors
@@ -346,236 +346,236 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
  .text          0x0000000000000eea       0x38 ./functions.o
                 0x0000000000000eea                control_state(unsigned char*)
                 0x0000000000000f02                print_lcd(LiquidCrystal*)
- .text          0x0000000000000f22       0xd4 ./main.o
+ .text          0x0000000000000f22       0xd8 ./main.o
                 0x0000000000000f9a                main
- .text          0x0000000000000ff6      0xa7a /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(Print.o)
-                0x0000000000000ff6                String::length() const
-                0x0000000000001016                Print::write(char const*)
-                0x000000000000106c                Print::write(unsigned char const*, unsigned int)
-                0x00000000000010e6                Print::print(char const*)
-                0x0000000000001126                Print::printNumber(unsigned long, unsigned char)
-                0x00000000000012b4                Print::print(unsigned long, int)
-                0x0000000000001326                Print::print(unsigned int, int)
-                0x000000000000136e                Print::print(unsigned char, int)
-                0x00000000000013b2                Print::print(long, int)
-                0x000000000000147e                Print::print(int, int)
-                0x00000000000014ca                Print::print(char, int)
-                0x000000000000150e                Print::println()
-                0x0000000000001542                Print::println(unsigned long, int)
-                0x000000000000159a                Print::println(unsigned int, int)
-                0x00000000000015e0                Print::println(int, int)
-                0x0000000000001626                Print::println(unsigned char, int)
-                0x0000000000001666                Print::println(char const*)
-                0x000000000000169e                Print::println(char, int)
-                0x00000000000016de                Print::println(long, int)
-                0x0000000000001736                Print::printFloat(double, unsigned char)
-                0x0000000000001906                Print::print(double, int)
-                0x0000000000001954                Print::println(double, int)
-                0x00000000000019ac                Print::print(String const&)
-                0x0000000000001a38                Print::println(String const&)
- .text          0x0000000000001a70     0x1ad8 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
-                0x0000000000001a90                String::setCharAt(unsigned int, char)
-                0x0000000000001aec                String::operator[](unsigned int)
-                0x0000000000001b5a                String::operator[](unsigned int) const
-                0x0000000000001b90                String::charAt(unsigned int) const
-                0x0000000000001bc0                String::toCharArray(char*, unsigned int)
-                0x0000000000001c52                String::getBytes(unsigned char*, unsigned int)
-                0x0000000000001ce4                String::~String()
-                0x0000000000001d20                String::startsWith(String const&, unsigned int) const
-                0x0000000000001da8                String::startsWith(String const&) const
-                0x0000000000001dfe                String::lastIndexOf(char, unsigned int) const
-                0x0000000000001ed6                String::lastIndexOf(char) const
-                0x0000000000001f0e                String::indexOf(String const&, unsigned int) const
-                0x0000000000001faa                String::indexOf(String const&) const
-                0x0000000000001fde                String::indexOf(char, unsigned int) const
-                0x000000000000207a                String::indexOf(char) const
-                0x00000000000020a6                String::equals(String const&) const
-                0x0000000000002106                String::endsWith(String const&) const
-                0x0000000000002184                String::operator>=(String const&) const
-                0x00000000000021d6                String::operator<=(String const&) const
-                0x000000000000222a                String::operator>(String const&) const
-                0x000000000000227e                String::operator<(String const&) const
-                0x00000000000022d0                String::operator!=(String const&) const
-                0x000000000000233c                String::operator==(String const&) const
-                0x00000000000023a0                String::compareTo(String const&) const
-                0x00000000000023d8                String::getBuffer(unsigned int)
-                0x0000000000002440                String::operator+=(String const&)
-                0x0000000000002504                String::concat(String const&)
-                0x0000000000002534                String::operator=(String const&)
-                0x00000000000025e6                String::String(unsigned char)
-                0x0000000000002644                String::String(unsigned char)
-                0x00000000000026a2                String::String(char)
-                0x0000000000002700                String::String(char)
-                0x000000000000275e                String::String(String const&)
-                0x00000000000027c4                String::String(String const&)
-                0x000000000000282a                String::String(unsigned long, int)
-                0x00000000000028be                String::String(unsigned long, int)
-                0x0000000000002952                String::String(unsigned int, int)
-                0x00000000000029e6                String::String(unsigned int, int)
-                0x0000000000002a7a                String::String(char const*)
-                0x0000000000002aec                String::toUpperCase() const
-                0x0000000000002b90                String::toLowerCase() const
-                0x0000000000002c34                String::equalsIgnoreCase(String const&) const
-                0x0000000000002ce0                String::substring(unsigned int, unsigned int) const
-                0x0000000000002dbe                String::substring(unsigned int) const
-                0x0000000000002e0a                String::lastIndexOf(String const&, unsigned int) const
-                0x0000000000002f36                String::lastIndexOf(String const&) const
-                0x0000000000002f7c                String::trim() const
-                0x000000000000308e                String::replace(String const&, String const&)
-                0x00000000000031e0                String::replace(char, char)
-                0x000000000000329a                String::String(char const*)
-                0x000000000000330c                String::String(long, int)
-                0x00000000000033a2                String::String(long, int)
-                0x0000000000003438                String::String(int, int)
-                0x00000000000034c0                String::String(int, int)
- .text          0x0000000000003548        0xa /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(missing.o)
-                0x0000000000003548                __cxa_pure_virtual
- .text          0x0000000000003552      0x3a0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring.o)
-                0x0000000000003552                __vector_16
-                0x0000000000003632                millis
-                0x0000000000003686                micros
-                0x000000000000373c                delay
-                0x00000000000037c2                delayMicroseconds
-                0x0000000000003812                init
- .text          0x00000000000038f2      0x3ae /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring_digital.o)
-                0x00000000000038f2                pinMode
-                0x00000000000039d4                digitalWrite
-                0x0000000000003b54                digitalRead
- .text          0x0000000000003ca0        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(pins_arduino.o)
- .text          0x0000000000003ca0        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
- .text          0x0000000000003ca0        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
- .text          0x0000000000003ca0        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
- .text          0x0000000000003ca0        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
- .text          0x0000000000003ca0        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
- .text          0x0000000000003ca0       0x58 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fixunssfsi.o)
-                0x0000000000003ca0                __fixunssfsi
- .text          0x0000000000003cf8      0x354 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_addsub_sf.o)
-                0x0000000000003f90                __subsf3
-                0x0000000000003ff2                __addsf3
- .text          0x000000000000404c      0x1f4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mul_sf.o)
-                0x000000000000404c                __mulsf3
- .text          0x0000000000004240      0x158 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_div_sf.o)
-                0x0000000000004240                __divsf3
- .text          0x0000000000004398       0x60 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ge_sf.o)
-                0x0000000000004398                __gesf2
- .text          0x00000000000043f8       0x60 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_lt_sf.o)
-                0x00000000000043f8                __ltsf2
- .text          0x0000000000004458       0xbc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_si_to_sf.o)
-                0x0000000000004458                __floatsisf
- .text          0x0000000000004514       0xa8 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_sf_to_si.o)
-                0x0000000000004514                __fixsfsi
- .text          0x00000000000045bc        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_thenan_sf.o)
- .text          0x00000000000045bc       0xf2 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_usi_to_sf.o)
-                0x00000000000045bc                __floatunsisf
- .text          0x00000000000046ae        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
- .text          0x00000000000046ae        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
- .text          0x00000000000046ae        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
- .text          0x00000000000046ae       0x9e /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clzsi2.o)
-                0x00000000000046ae                __clzsi2
- .text          0x000000000000474c      0x1ac /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_pack_sf.o)
-                0x000000000000474c                __pack_f
- .text          0x00000000000048f8       0xf0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_unpack_sf.o)
-                0x00000000000048f8                __unpack_f
- .text          0x00000000000049e8       0xb2 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fpcmp_parts_sf.o)
-                0x00000000000049e8                __fpcmp_parts_f
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clz.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
- .text          0x0000000000004a9a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
-                0x0000000000004a9a                . = ALIGN (0x2)
+ .text          0x0000000000000ffa      0xa7a /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(Print.o)
+                0x0000000000000ffa                String::length() const
+                0x000000000000101a                Print::write(char const*)
+                0x0000000000001070                Print::write(unsigned char const*, unsigned int)
+                0x00000000000010ea                Print::print(char const*)
+                0x000000000000112a                Print::printNumber(unsigned long, unsigned char)
+                0x00000000000012b8                Print::print(unsigned long, int)
+                0x000000000000132a                Print::print(unsigned int, int)
+                0x0000000000001372                Print::print(unsigned char, int)
+                0x00000000000013b6                Print::print(long, int)
+                0x0000000000001482                Print::print(int, int)
+                0x00000000000014ce                Print::print(char, int)
+                0x0000000000001512                Print::println()
+                0x0000000000001546                Print::println(unsigned long, int)
+                0x000000000000159e                Print::println(unsigned int, int)
+                0x00000000000015e4                Print::println(int, int)
+                0x000000000000162a                Print::println(unsigned char, int)
+                0x000000000000166a                Print::println(char const*)
+                0x00000000000016a2                Print::println(char, int)
+                0x00000000000016e2                Print::println(long, int)
+                0x000000000000173a                Print::printFloat(double, unsigned char)
+                0x000000000000190a                Print::print(double, int)
+                0x0000000000001958                Print::println(double, int)
+                0x00000000000019b0                Print::print(String const&)
+                0x0000000000001a3c                Print::println(String const&)
+ .text          0x0000000000001a74     0x1ad8 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
+                0x0000000000001a94                String::setCharAt(unsigned int, char)
+                0x0000000000001af0                String::operator[](unsigned int)
+                0x0000000000001b5e                String::operator[](unsigned int) const
+                0x0000000000001b94                String::charAt(unsigned int) const
+                0x0000000000001bc4                String::toCharArray(char*, unsigned int)
+                0x0000000000001c56                String::getBytes(unsigned char*, unsigned int)
+                0x0000000000001ce8                String::~String()
+                0x0000000000001d24                String::startsWith(String const&, unsigned int) const
+                0x0000000000001dac                String::startsWith(String const&) const
+                0x0000000000001e02                String::lastIndexOf(char, unsigned int) const
+                0x0000000000001eda                String::lastIndexOf(char) const
+                0x0000000000001f12                String::indexOf(String const&, unsigned int) const
+                0x0000000000001fae                String::indexOf(String const&) const
+                0x0000000000001fe2                String::indexOf(char, unsigned int) const
+                0x000000000000207e                String::indexOf(char) const
+                0x00000000000020aa                String::equals(String const&) const
+                0x000000000000210a                String::endsWith(String const&) const
+                0x0000000000002188                String::operator>=(String const&) const
+                0x00000000000021da                String::operator<=(String const&) const
+                0x000000000000222e                String::operator>(String const&) const
+                0x0000000000002282                String::operator<(String const&) const
+                0x00000000000022d4                String::operator!=(String const&) const
+                0x0000000000002340                String::operator==(String const&) const
+                0x00000000000023a4                String::compareTo(String const&) const
+                0x00000000000023dc                String::getBuffer(unsigned int)
+                0x0000000000002444                String::operator+=(String const&)
+                0x0000000000002508                String::concat(String const&)
+                0x0000000000002538                String::operator=(String const&)
+                0x00000000000025ea                String::String(unsigned char)
+                0x0000000000002648                String::String(unsigned char)
+                0x00000000000026a6                String::String(char)
+                0x0000000000002704                String::String(char)
+                0x0000000000002762                String::String(String const&)
+                0x00000000000027c8                String::String(String const&)
+                0x000000000000282e                String::String(unsigned long, int)
+                0x00000000000028c2                String::String(unsigned long, int)
+                0x0000000000002956                String::String(unsigned int, int)
+                0x00000000000029ea                String::String(unsigned int, int)
+                0x0000000000002a7e                String::String(char const*)
+                0x0000000000002af0                String::toUpperCase() const
+                0x0000000000002b94                String::toLowerCase() const
+                0x0000000000002c38                String::equalsIgnoreCase(String const&) const
+                0x0000000000002ce4                String::substring(unsigned int, unsigned int) const
+                0x0000000000002dc2                String::substring(unsigned int) const
+                0x0000000000002e0e                String::lastIndexOf(String const&, unsigned int) const
+                0x0000000000002f3a                String::lastIndexOf(String const&) const
+                0x0000000000002f80                String::trim() const
+                0x0000000000003092                String::replace(String const&, String const&)
+                0x00000000000031e4                String::replace(char, char)
+                0x000000000000329e                String::String(char const*)
+                0x0000000000003310                String::String(long, int)
+                0x00000000000033a6                String::String(long, int)
+                0x000000000000343c                String::String(int, int)
+                0x00000000000034c4                String::String(int, int)
+ .text          0x000000000000354c        0xa /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(missing.o)
+                0x000000000000354c                __cxa_pure_virtual
+ .text          0x0000000000003556      0x3a0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring.o)
+                0x0000000000003556                __vector_16
+                0x0000000000003636                millis
+                0x000000000000368a                micros
+                0x0000000000003740                delay
+                0x00000000000037c6                delayMicroseconds
+                0x0000000000003816                init
+ .text          0x00000000000038f6      0x3ae /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring_digital.o)
+                0x00000000000038f6                pinMode
+                0x00000000000039d8                digitalWrite
+                0x0000000000003b58                digitalRead
+ .text          0x0000000000003ca4        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(pins_arduino.o)
+ .text          0x0000000000003ca4        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000003ca4        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000003ca4        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000003ca4        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000003ca4        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
+ .text          0x0000000000003ca4       0x58 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fixunssfsi.o)
+                0x0000000000003ca4                __fixunssfsi
+ .text          0x0000000000003cfc      0x354 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_addsub_sf.o)
+                0x0000000000003f94                __subsf3
+                0x0000000000003ff6                __addsf3
+ .text          0x0000000000004050      0x1f4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mul_sf.o)
+                0x0000000000004050                __mulsf3
+ .text          0x0000000000004244      0x158 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_div_sf.o)
+                0x0000000000004244                __divsf3
+ .text          0x000000000000439c       0x60 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ge_sf.o)
+                0x000000000000439c                __gesf2
+ .text          0x00000000000043fc       0x60 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_lt_sf.o)
+                0x00000000000043fc                __ltsf2
+ .text          0x000000000000445c       0xbc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_si_to_sf.o)
+                0x000000000000445c                __floatsisf
+ .text          0x0000000000004518       0xa8 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_sf_to_si.o)
+                0x0000000000004518                __fixsfsi
+ .text          0x00000000000045c0        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_thenan_sf.o)
+ .text          0x00000000000045c0       0xf2 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_usi_to_sf.o)
+                0x00000000000045c0                __floatunsisf
+ .text          0x00000000000046b2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .text          0x00000000000046b2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .text          0x00000000000046b2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .text          0x00000000000046b2       0x9e /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clzsi2.o)
+                0x00000000000046b2                __clzsi2
+ .text          0x0000000000004750      0x1ac /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_pack_sf.o)
+                0x0000000000004750                __pack_f
+ .text          0x00000000000048fc       0xf0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_unpack_sf.o)
+                0x00000000000048fc                __unpack_f
+ .text          0x00000000000049ec       0xb2 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fpcmp_parts_sf.o)
+                0x00000000000049ec                __fpcmp_parts_f
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clz.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
+ .text          0x0000000000004a9e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000004a9e                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x0000000000004a9a       0x44 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
-                0x0000000000004a9a                __udivmodsi4
- .text.libgcc   0x0000000000004ade        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
- .text.libgcc   0x0000000000004ade        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
- .text.libgcc   0x0000000000004ade        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000000000004ade        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
- .text.libgcc   0x0000000000004ade       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
-                0x0000000000004ade                __prologue_saves__
- .text.libgcc   0x0000000000004b16       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
-                0x0000000000004b16                __epilogue_restores__
- .text.libgcc   0x0000000000004b4c        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
-                0x0000000000004b4c                __tablejump2__
-                0x0000000000004b50                __tablejump__
+ .text.libgcc   0x0000000000004a9e       0x44 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000004a9e                __udivmodsi4
+ .text.libgcc   0x0000000000004ae2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000004ae2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000004ae2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000004ae2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
+ .text.libgcc   0x0000000000004ae2       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                0x0000000000004ae2                __prologue_saves__
+ .text.libgcc   0x0000000000004b1a       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                0x0000000000004b1a                __epilogue_restores__
+ .text.libgcc   0x0000000000004b50        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                0x0000000000004b50                __tablejump2__
+                0x0000000000004b54                __tablejump__
  .text.avr-libc
-                0x0000000000004b58      0x20a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
-                0x0000000000004b58                malloc
-                0x0000000000004cb2                free
+                0x0000000000004b5c      0x20a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x0000000000004b5c                malloc
+                0x0000000000004cb6                free
  .text.avr-libc
-                0x0000000000004d62       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
-                0x0000000000004d62                isspace
+                0x0000000000004d66       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
+                0x0000000000004d66                isspace
  .text.avr-libc
-                0x0000000000004d72       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
-                0x0000000000004d72                tolower
+                0x0000000000004d76       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
+                0x0000000000004d76                tolower
  .text.avr-libc
-                0x0000000000004d82       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
-                0x0000000000004d82                toupper
+                0x0000000000004d86       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
+                0x0000000000004d86                toupper
  .text.avr-libc
-                0x0000000000004d92       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
-                0x0000000000004d92                strcat
+                0x0000000000004d96       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
+                0x0000000000004d96                strcat
  .text.avr-libc
-                0x0000000000004da8       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
-                0x0000000000004da8                strchr
+                0x0000000000004dac       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
+                0x0000000000004dac                strchr
  .text.avr-libc
-                0x0000000000004dbe       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x0000000000004dbe                strcmp
+                0x0000000000004dc2       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x0000000000004dc2                strcmp
  .text.avr-libc
-                0x0000000000004dd0        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
-                0x0000000000004dd0                strcpy
+                0x0000000000004dd4        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
+                0x0000000000004dd4                strcpy
  .text.avr-libc
-                0x0000000000004dde       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
-                0x0000000000004dde                strlen
+                0x0000000000004de2       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
+                0x0000000000004de2                strlen
  .text.avr-libc
-                0x0000000000004df0       0x1c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
-                0x0000000000004df0                strncmp
+                0x0000000000004df4       0x1c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
+                0x0000000000004df4                strncmp
  .text.avr-libc
-                0x0000000000004e0c       0x1e /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
-                0x0000000000004e0c                strncpy
+                0x0000000000004e10       0x1e /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
+                0x0000000000004e10                strncpy
  .text.avr-libc
-                0x0000000000004e2a       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
-                0x0000000000004e2a                strrchr
+                0x0000000000004e2e       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
+                0x0000000000004e2e                strrchr
  .text.avr-libc
-                0x0000000000004e40       0x34 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
-                0x0000000000004e40                strstr
+                0x0000000000004e44       0x34 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
+                0x0000000000004e44                strstr
  .text.avr-libc
-                0x0000000000004e74       0x42 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
-                0x0000000000004e74                itoa
+                0x0000000000004e78       0x42 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
+                0x0000000000004e78                itoa
  .text.avr-libc
-                0x0000000000004eb6       0x68 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
-                0x0000000000004eb6                ltoa
+                0x0000000000004eba       0x68 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
+                0x0000000000004eba                ltoa
  .text.avr-libc
-                0x0000000000004f1e       0x4a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
-                0x0000000000004f1e                ultoa
+                0x0000000000004f22       0x4a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
+                0x0000000000004f22                ultoa
  .text.avr-libc
-                0x0000000000004f68        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
-                0x0000000000004f68                __ctype_isfalse
-                0x0000000000004f6c                __ctype_istrue
+                0x0000000000004f6c        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+                0x0000000000004f6c                __ctype_isfalse
+                0x0000000000004f70                __ctype_istrue
  .text.avr-libc
-                0x0000000000004f6e       0x20 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
-                0x0000000000004f6e                strrev
- .text.libgcc   0x0000000000004f8e       0x28 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
-                0x0000000000004f8e                __udivmodhi4
-                0x0000000000004fb6                . = ALIGN (0x2)
+                0x0000000000004f72       0x20 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
+                0x0000000000004f72                strrev
+ .text.libgcc   0x0000000000004f92       0x28 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000004f92                __udivmodhi4
+                0x0000000000004fba                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000004fb6        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
-                0x0000000000004fb6                exit
-                0x0000000000004fb6                _exit
+ .fini9         0x0000000000004fba        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                0x0000000000004fba                exit
+                0x0000000000004fba                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -594,11 +594,11 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000004fb6        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000004fba        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000004fba                _etext = .
+                0x0000000000004fbe                _etext = .
 
-.data           0x0000000000800100      0x13a load address 0x0000000000004fba
+.data           0x0000000000800100      0x13a load address 0x0000000000004fbe
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
@@ -670,82 +670,80 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
                 0x000000000080023a                _edata = .
                 0x000000000080023a                PROVIDE (__data_end, .)
 
-.bss            0x000000000080023a       0x28
+.bss            0x000000000080023a       0x25
                 0x000000000080023a                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x000000000080023a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
  .bss           0x000000000080023a        0x0 ./LiquidCrystal.o
  .bss           0x000000000080023a        0x0 ./functions.o
- .bss           0x000000000080023a       0x1a ./main.o
+ .bss           0x000000000080023a       0x17 ./main.o
                 0x000000000080023a                lcd
                 0x000000000080024d                currentAmount
-                0x0000000000800251                global_state_
-                0x0000000000800252                print_lcd_
- .bss           0x0000000000800254        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(Print.o)
- .bss           0x0000000000800254        0x1 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
- .bss           0x0000000000800255        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(missing.o)
- .bss           0x0000000000800255        0x9 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring.o)
-                0x0000000000800255                timer0_overflow_count
-                0x0000000000800259                timer0_millis
- .bss           0x000000000080025e        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring_digital.o)
- .bss           0x000000000080025e        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(pins_arduino.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fixunssfsi.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_addsub_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mul_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_div_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ge_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_lt_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_si_to_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_sf_to_si.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_thenan_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_usi_to_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clzsi2.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_pack_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_unpack_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fpcmp_parts_sf.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clz.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
- .bss           0x000000000080025e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000800251        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(Print.o)
+ .bss           0x0000000000800251        0x1 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
+ .bss           0x0000000000800252        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(missing.o)
+ .bss           0x0000000000800252        0x9 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring.o)
+                0x0000000000800252                timer0_overflow_count
+                0x0000000000800256                timer0_millis
+ .bss           0x000000000080025b        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring_digital.o)
+ .bss           0x000000000080025b        0x0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(pins_arduino.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fixunssfsi.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_addsub_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mul_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_div_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ge_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_lt_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_si_to_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_sf_to_si.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_thenan_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_usi_to_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clzsi2.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_pack_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_unpack_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clz.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
+ .bss           0x000000000080025b        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x000000000080025e        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
-                0x000000000080025e                __brkval
-                0x0000000000800260                __flp
-                0x0000000000800262                PROVIDE (__bss_end, .)
-                0x0000000000004fba                __data_load_start = LOADADDR (.data)
-                0x00000000000050f4                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x000000000080025b        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
+                0x000000000080025b                __brkval
+                0x000000000080025d                __flp
+                0x000000000080025f                PROVIDE (__bss_end, .)
+                0x0000000000004fbe                __data_load_start = LOADADDR (.data)
+                0x00000000000050f8                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0000000000800262        0x0
-                0x0000000000800262                PROVIDE (__noinit_start, .)
+.noinit         0x000000000080025f        0x0
+                0x000000000080025f                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0000000000800262                PROVIDE (__noinit_end, .)
-                0x0000000000800262                _end = .
-                0x0000000000800262                PROVIDE (__heap_start, .)
+                0x000000000080025f                PROVIDE (__noinit_end, .)
+                0x000000000080025f                _end = .
+                0x000000000080025f                PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
  *(.eeprom*)
@@ -763,67 +761,67 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x0000000000000000     0x7e48
+.stab           0x0000000000000000     0x7e60
  *(.stab)
  .stab          0x0000000000000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
  .stab          0x00000000000006b4     0x1548 ./LiquidCrystal.o
                                        0x1554 (size before relaxing)
  .stab          0x0000000000001bfc      0x4b0 ./functions.o
                                         0x4bc (size before relaxing)
- .stab          0x00000000000020ac      0x5a0 ./main.o
-                                        0x5ac (size before relaxing)
- .stab          0x000000000000264c      0xe58 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(Print.o)
+ .stab          0x00000000000020ac      0x5b8 ./main.o
+                                        0x5c4 (size before relaxing)
+ .stab          0x0000000000002664      0xe58 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(Print.o)
                                         0xe64 (size before relaxing)
- .stab          0x00000000000034a4     0x1fd4 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
+ .stab          0x00000000000034bc     0x1fd4 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
                                        0x1fe0 (size before relaxing)
- .stab          0x0000000000005478       0xf0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(missing.o)
+ .stab          0x0000000000005490       0xf0 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(missing.o)
                                          0xfc (size before relaxing)
- .stab          0x0000000000005568      0x81c /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring.o)
+ .stab          0x0000000000005580      0x81c /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring.o)
                                         0x828 (size before relaxing)
- .stab          0x0000000000005d84      0x888 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring_digital.o)
+ .stab          0x0000000000005d9c      0x888 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring_digital.o)
                                         0xb28 (size before relaxing)
- .stab          0x000000000000660c      0x1f8 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(pins_arduino.o)
+ .stab          0x0000000000006624      0x1f8 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(pins_arduino.o)
                                         0x534 (size before relaxing)
- .stab          0x0000000000006804      0x6f0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
+ .stab          0x000000000000681c      0x6f0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
                                         0x6fc (size before relaxing)
- .stab          0x0000000000006ef4       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
+ .stab          0x0000000000006f0c       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
                                          0xa8 (size before relaxing)
- .stab          0x0000000000006f90       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
+ .stab          0x0000000000006fa8       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(tolower.o)
                                          0xa8 (size before relaxing)
- .stab          0x000000000000702c       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
+ .stab          0x0000000000007044       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(toupper.o)
                                          0xa8 (size before relaxing)
- .stab          0x00000000000070c8       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
+ .stab          0x00000000000070e0       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
                                          0xa8 (size before relaxing)
- .stab          0x0000000000007164       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
+ .stab          0x000000000000717c       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)
                                          0xa8 (size before relaxing)
- .stab          0x0000000000007200       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
+ .stab          0x0000000000007218       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
                                          0x90 (size before relaxing)
- .stab          0x0000000000007284       0x6c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
+ .stab          0x000000000000729c       0x6c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcpy.o)
                                          0x78 (size before relaxing)
- .stab          0x00000000000072f0       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
+ .stab          0x0000000000007308       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strlen.o)
                                          0x90 (size before relaxing)
- .stab          0x0000000000007374       0xc0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
+ .stab          0x000000000000738c       0xc0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncmp.o)
                                          0xcc (size before relaxing)
- .stab          0x0000000000007434       0xcc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
+ .stab          0x000000000000744c       0xcc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncpy.o)
                                          0xd8 (size before relaxing)
- .stab          0x0000000000007500       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
+ .stab          0x0000000000007518       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrchr.o)
                                          0xa8 (size before relaxing)
- .stab          0x000000000000759c      0x150 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
+ .stab          0x00000000000075b4      0x150 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strstr.o)
                                         0x15c (size before relaxing)
- .stab          0x00000000000076ec      0x1b0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
+ .stab          0x0000000000007704      0x1b0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
                                         0x1bc (size before relaxing)
- .stab          0x000000000000789c      0x294 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
+ .stab          0x00000000000078b4      0x294 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
                                         0x2a0 (size before relaxing)
- .stab          0x0000000000007b30      0x1e0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
+ .stab          0x0000000000007b48      0x1e0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ultoa.o)
                                         0x1ec (size before relaxing)
- .stab          0x0000000000007d10       0x60 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .stab          0x0000000000007d28       0x60 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
                                          0x6c (size before relaxing)
- .stab          0x0000000000007d70       0xd8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
+ .stab          0x0000000000007d88       0xd8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strrev.o)
                                          0xe4 (size before relaxing)
 
-.stabstr        0x0000000000000000     0x40bb
+.stabstr        0x0000000000000000     0x4092
  *(.stabstr)
- .stabstr       0x0000000000000000     0x40bb /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
+ .stabstr       0x0000000000000000     0x4092 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
 
 .stab.excl
  *(.stab.excl)
@@ -1165,7 +1163,6 @@ exit                                              /usr/lib/gcc/avr/4.3.5/avr5/li
                                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
 free                                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(malloc.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
-global_state_                                     ./main.o
 init                                              /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring.o)
                                                   ./main.o
 isspace                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
@@ -1192,7 +1189,6 @@ port_to_output_PGM                                /home/r0oland/workspace/IVAT/E
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(wiring_digital.o)
 print_lcd(LiquidCrystal*)                         ./functions.o
                                                   ./main.o
-print_lcd_                                        ./main.o
 strcat                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Debug/libArduino.a(WString.o)
 strchr                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)

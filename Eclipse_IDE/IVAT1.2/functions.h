@@ -13,6 +13,6 @@
 #define FUNCTIONS_H_
 
 void print_lcd(LiquidCrystal* lcd);
-void control_state(byte *global_state_);
+void control_state(byte *main_state);
 
 #endif /* FUNCTIONS_H_ */

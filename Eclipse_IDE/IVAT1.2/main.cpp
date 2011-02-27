@@ -18,12 +18,6 @@ struct my_time
 DWORD amount = START_AMOUNT; //number of pictures that should be taken
 DWORD currentAmount = 0; //number of pictures allready taken
 
-byte global_state_ = 0;
-
-void PrintFocus(int *state);
-void printLcd(int *state);
-void (*print_lcd_)(int *state);
-
 ///MAIN///
 int main()
 {
@@ -41,9 +35,10 @@ int main()
 
 	print_lcd(&lcd);
 
+	byte main_state = 0;
 	while (true)
 	{
-		control_state(&global_state_);
+		control_state(&main_state);
 	}
 	return 0;
 }

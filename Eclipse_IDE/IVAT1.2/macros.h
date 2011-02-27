@@ -1,14 +1,20 @@
-/*
- * macros.h
- *
- *  Created on: 24.02.2011
- *      Author: r0oland
- */
+///////////////////////////////////////////////////////////////////////////
+// Filename: macros.h
+// Author:   Johannes Rebling
+// Date:     February 27, 2011
+//
+// Description: This files defines my constants, special types and global
+//              variables.
+//
+///////////////////////////////////////////////////////////////////////////
 
 #ifndef MACROS_H_
 #define MACROS_H_
 
-//Button Pins---------------------------------------------------
+//typedefs-----------------------------------------------------------------
+typedef unsigned long DWORD;
+
+//Button Pins--------------------------------------------------------------
 #define UP 11 //button to next state
 #define DOWN 0 //button to previous state
 #define LEFT 13 //button to decrease quantity/time
@@ -28,10 +34,7 @@
 //the bigger FOCUS, the longer the cam has time to focus (kind of obvious)
 #define FOCUS_TIME 700
 
-//typedefs--------------------------------------------------
-typedef unsigned long DWORD;
-
-//names used for switch: case-------------------------------------------
+//names used for switch: case----------------------------------------------
 //used in print_Lcd() function and config_state
 enum { OVERVIEW, CHOOSE_INTERVAL, AMOUNT,
 	INTERVAL_SETTING, FOCUS_SETTING, DELAY_SETTING };
