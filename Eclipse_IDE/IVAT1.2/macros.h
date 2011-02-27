@@ -83,6 +83,7 @@ struct all_times
 {
 	time interval_time;
 	time delay_time;
+	time focus_time;
 	time delay_time_temp;
 	time duration;
 	time remaining_time;
@@ -97,7 +98,6 @@ struct state
 	boolean interval;
 	boolean focus;
 	byte focus_style;
-} my_states =
-{ 0, 0, true, true, YA };
+};
 
 #endif /* MACROS_H_ */

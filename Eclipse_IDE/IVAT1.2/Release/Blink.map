@@ -21,7 +21,7 @@ Archive member included because of file (symbol)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
                               ./functions.o (__do_clear_bss)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
-                              ./main.o (__do_global_ctors)
+                              ./functions.o (__do_global_ctors)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_fixunssfsi.o)
                               /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(Print.o) (__fixunssfsi)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_addsub_sf.o)
@@ -155,23 +155,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./functions.o
  .data          0x0000000000000000        0x0 ./functions.o
  .bss           0x0000000000000000        0x0 ./functions.o
- .bss.remainingTime
-                0x0000000000000000       0x14 ./functions.o
- .bss.nextShootTime
-                0x0000000000000000       0x14 ./functions.o
- .bss.shootingReadyTime
-                0x0000000000000000       0x14 ./functions.o
- .data.my_states
-                0x0000000000000000        0x5 ./functions.o
  .text          0x0000000000000000        0x0 ./main.o
  .data          0x0000000000000000        0x0 ./main.o
  .bss           0x0000000000000000        0x0 ./main.o
- .bss.remainingTime
-                0x0000000000000000       0x14 ./main.o
- .bss.nextShootTime
-                0x0000000000000000       0x14 ./main.o
- .bss.shootingReadyTime
-                0x0000000000000000       0x14 ./main.o
  .data.amount   0x0000000000000000        0x4 ./main.o
  .bss.currentAmount
                 0x0000000000000000        0x4 ./main.o
@@ -633,7 +619,7 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x978
+.text           0x0000000000000000      0xa42
  *(.vectors)
  .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
                 0x0000000000000000                __vectors
@@ -660,156 +646,159 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
  *(.lowtext*)
                 0x00000000000000c2                __ctors_start = .
  *(.ctors)
- .ctors         0x00000000000000c2        0x2 ./main.o
-                0x00000000000000c4                __ctors_end = .
-                0x00000000000000c4                __dtors_start = .
+ .ctors         0x00000000000000c2        0x2 ./functions.o
+ .ctors         0x00000000000000c4        0x2 ./main.o
+                0x00000000000000c6                __ctors_end = .
+                0x00000000000000c6                __dtors_start = .
  *(.dtors)
-                0x00000000000000c4                __dtors_end = .
+                0x00000000000000c6                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000000000000c4        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
-                0x00000000000000c4                __init
+ .init0         0x00000000000000c6        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
+                0x00000000000000c6                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000000000000c4        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
+ .init2         0x00000000000000c6        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000000000000d0       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
-                0x00000000000000d0                __do_copy_data
- .init4         0x00000000000000e6       0x10 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
-                0x00000000000000e6                __do_clear_bss
+ .init4         0x00000000000000d2       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                0x00000000000000d2                __do_copy_data
+ .init4         0x00000000000000e8       0x10 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x00000000000000e8                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x00000000000000f6       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
-                0x00000000000000f6                __do_global_ctors
+ .init6         0x00000000000000f8       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
+                0x00000000000000f8                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000000000000010c        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
+ .init9         0x000000000000010e        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
  *(.init9)
  *(.text)
- .text          0x0000000000000114        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
-                0x0000000000000114                __vector_22
-                0x0000000000000114                __vector_1
-                0x0000000000000114                __vector_24
-                0x0000000000000114                __vector_12
-                0x0000000000000114                __bad_interrupt
-                0x0000000000000114                __vector_6
-                0x0000000000000114                __vector_3
-                0x0000000000000114                __vector_23
-                0x0000000000000114                __vector_25
-                0x0000000000000114                __vector_11
-                0x0000000000000114                __vector_13
-                0x0000000000000114                __vector_17
-                0x0000000000000114                __vector_19
-                0x0000000000000114                __vector_7
-                0x0000000000000114                __vector_5
-                0x0000000000000114                __vector_4
-                0x0000000000000114                __vector_9
-                0x0000000000000114                __vector_2
-                0x0000000000000114                __vector_21
-                0x0000000000000114                __vector_15
-                0x0000000000000114                __vector_8
-                0x0000000000000114                __vector_14
-                0x0000000000000114                __vector_10
-                0x0000000000000114                __vector_18
-                0x0000000000000114                __vector_20
-                0x0000000000000118                . = ALIGN (0x2)
+ .text          0x0000000000000116        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
+                0x0000000000000116                __vector_22
+                0x0000000000000116                __vector_1
+                0x0000000000000116                __vector_24
+                0x0000000000000116                __vector_12
+                0x0000000000000116                __bad_interrupt
+                0x0000000000000116                __vector_6
+                0x0000000000000116                __vector_3
+                0x0000000000000116                __vector_23
+                0x0000000000000116                __vector_25
+                0x0000000000000116                __vector_11
+                0x0000000000000116                __vector_13
+                0x0000000000000116                __vector_17
+                0x0000000000000116                __vector_19
+                0x0000000000000116                __vector_7
+                0x0000000000000116                __vector_5
+                0x0000000000000116                __vector_4
+                0x0000000000000116                __vector_9
+                0x0000000000000116                __vector_2
+                0x0000000000000116                __vector_21
+                0x0000000000000116                __vector_15
+                0x0000000000000116                __vector_8
+                0x0000000000000116                __vector_14
+                0x0000000000000116                __vector_10
+                0x0000000000000116                __vector_18
+                0x0000000000000116                __vector_20
+                0x000000000000011a                . = ALIGN (0x2)
  *(.text.*)
  .text._ZN13LiquidCrystal11pulseEnableEv
-                0x0000000000000118       0x42 ./LiquidCrystal.o
-                0x0000000000000118                LiquidCrystal::pulseEnable()
+                0x000000000000011a       0x42 ./LiquidCrystal.o
+                0x000000000000011a                LiquidCrystal::pulseEnable()
  .text._ZN13LiquidCrystal10write8bitsEh
-                0x000000000000015a       0x6c ./LiquidCrystal.o
-                0x000000000000015a                LiquidCrystal::write8bits(unsigned char)
+                0x000000000000015c       0x6c ./LiquidCrystal.o
+                0x000000000000015c                LiquidCrystal::write8bits(unsigned char)
  .text._ZN13LiquidCrystal10write4bitsEh
-                0x00000000000001c6       0x6c ./LiquidCrystal.o
-                0x00000000000001c6                LiquidCrystal::write4bits(unsigned char)
+                0x00000000000001c8       0x6c ./LiquidCrystal.o
+                0x00000000000001c8                LiquidCrystal::write4bits(unsigned char)
  .text._ZN13LiquidCrystal4sendEhh
-                0x0000000000000232       0x52 ./LiquidCrystal.o
-                0x0000000000000232                LiquidCrystal::send(unsigned char, unsigned char)
+                0x0000000000000234       0x52 ./LiquidCrystal.o
+                0x0000000000000234                LiquidCrystal::send(unsigned char, unsigned char)
  .text._ZN13LiquidCrystal5writeEh
-                0x0000000000000284        0x8 ./LiquidCrystal.o
-                0x0000000000000284                LiquidCrystal::write(unsigned char)
+                0x0000000000000286        0x8 ./LiquidCrystal.o
+                0x0000000000000286                LiquidCrystal::write(unsigned char)
  .text._ZN13LiquidCrystal7commandEh
-                0x000000000000028c        0x8 ./LiquidCrystal.o
-                0x000000000000028c                LiquidCrystal::command(unsigned char)
+                0x000000000000028e        0x8 ./LiquidCrystal.o
+                0x000000000000028e                LiquidCrystal::command(unsigned char)
  .text._ZN13LiquidCrystal7displayEv
-                0x0000000000000294       0x14 ./LiquidCrystal.o
-                0x0000000000000294                LiquidCrystal::display()
+                0x0000000000000296       0x14 ./LiquidCrystal.o
+                0x0000000000000296                LiquidCrystal::display()
  .text._ZN13LiquidCrystal5clearEv
-                0x00000000000002a8       0x10 ./LiquidCrystal.o
-                0x00000000000002a8                LiquidCrystal::clear()
+                0x00000000000002aa       0x10 ./LiquidCrystal.o
+                0x00000000000002aa                LiquidCrystal::clear()
  .text._ZN13LiquidCrystal5beginEhhh
-                0x00000000000002b8       0xde ./LiquidCrystal.o
-                0x00000000000002b8                LiquidCrystal::begin(unsigned char, unsigned char, unsigned char)
+                0x00000000000002ba       0xde ./LiquidCrystal.o
+                0x00000000000002ba                LiquidCrystal::begin(unsigned char, unsigned char, unsigned char)
  .text._ZN13LiquidCrystal4initEhhhhhhhhhhhh
-                0x0000000000000396       0x8e ./LiquidCrystal.o
-                0x0000000000000396                LiquidCrystal::init(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000000000000398       0x8e ./LiquidCrystal.o
+                0x0000000000000398                LiquidCrystal::init(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
  .text._ZN13LiquidCrystalC1Ehhhhhh
-                0x0000000000000424       0x6a ./LiquidCrystal.o
-                0x0000000000000424                LiquidCrystal::LiquidCrystal(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
- .text._Z13init_my_timesP9all_times
-                0x000000000000048e        0x2 ./functions.o
-                0x000000000000048e                init_my_times(all_times*)
+                0x0000000000000426       0x6a ./LiquidCrystal.o
+                0x0000000000000426                LiquidCrystal::LiquidCrystal(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+ .text._Z17init_all_my_timesP9all_times
+                0x0000000000000490       0x24 ./functions.o
+                0x0000000000000490                init_all_my_times(all_times*)
+ .text._GLOBAL__I_lcd
+                0x00000000000004b4       0x26 ./functions.o
+ .text._Z9print_lcdv
+                0x00000000000004da        0xa ./functions.o
+                0x00000000000004da                print_lcd()
  .text._Z19change_config_stateP5statehPm
-                0x0000000000000490       0x52 ./functions.o
-                0x0000000000000490                change_config_state(state*, unsigned char, unsigned long*)
+                0x00000000000004e4       0xb4 ./functions.o
+                0x00000000000004e4                change_config_state(state*, unsigned char, unsigned long*)
  .text._Z14control_configP5stateP9all_times
-                0x00000000000004e2       0x86 ./functions.o
-                0x00000000000004e2                control_config(state*, all_times*)
+                0x0000000000000598       0x86 ./functions.o
+                0x0000000000000598                control_config(state*, all_times*)
  .text._Z13control_stateP5stateP9all_times
-                0x0000000000000568       0x1a ./functions.o
-                0x0000000000000568                control_state(state*, all_times*)
- .text._Z9print_lcdP13LiquidCrystal
-                0x0000000000000582        0x6 ./functions.o
-                0x0000000000000582                print_lcd(LiquidCrystal*)
- .text._GLOBAL__I_remainingTime
-                0x0000000000000588       0x26 ./main.o
- .text.main     0x00000000000005ae       0x84 ./main.o
-                0x00000000000005ae                main
+                0x000000000000061e       0x1a ./functions.o
+                0x000000000000061e                control_state(state*, all_times*)
+ .text._GLOBAL__I_lcd
+                0x0000000000000638       0x26 ./main.o
+ .text.main     0x000000000000065e       0x9e ./main.o
+                0x000000000000065e                main
  .text._ZN5Print5writeEPKc
-                0x0000000000000632       0x30 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(Print.o)
-                0x0000000000000632                Print::write(char const*)
+                0x00000000000006fc       0x30 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(Print.o)
+                0x00000000000006fc                Print::write(char const*)
  .text._ZN5Print5writeEPKhj
-                0x0000000000000662       0x3e /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(Print.o)
-                0x0000000000000662                Print::write(unsigned char const*, unsigned int)
+                0x000000000000072c       0x3e /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(Print.o)
+                0x000000000000072c                Print::write(unsigned char const*, unsigned int)
  .text.__vector_16
-                0x00000000000006a0       0x90 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
-                0x00000000000006a0                __vector_16
- .text.millis   0x0000000000000730       0x1c /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
-                0x0000000000000730                millis
+                0x000000000000076a       0x90 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
+                0x000000000000076a                __vector_16
+ .text.millis   0x00000000000007fa       0x1c /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
+                0x00000000000007fa                millis
  .text.delayMicroseconds
-                0x000000000000074c       0x14 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
-                0x000000000000074c                delayMicroseconds
- .text.init     0x0000000000000760       0x76 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
-                0x0000000000000760                init
- .text.pinMode  0x00000000000007d6       0x4c /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
-                0x00000000000007d6                pinMode
+                0x0000000000000816       0x14 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
+                0x0000000000000816                delayMicroseconds
+ .text.init     0x000000000000082a       0x76 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
+                0x000000000000082a                init
+ .text.pinMode  0x00000000000008a0       0x4c /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
+                0x00000000000008a0                pinMode
  .text.digitalWrite
-                0x0000000000000822       0xa8 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
-                0x0000000000000822                digitalWrite
+                0x00000000000008ec       0xa8 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
+                0x00000000000008ec                digitalWrite
  .text.digitalRead
-                0x00000000000008ca       0x9e /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
-                0x00000000000008ca                digitalRead
- .text.libgcc   0x0000000000000968        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
-                0x0000000000000968                __tablejump2__
-                0x000000000000096c                __tablejump__
-                0x0000000000000974                . = ALIGN (0x2)
+                0x0000000000000994       0x9e /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
+                0x0000000000000994                digitalRead
+ .text.libgcc   0x0000000000000a32        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                0x0000000000000a32                __tablejump2__
+                0x0000000000000a36                __tablejump__
+                0x0000000000000a3e                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000000974        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
-                0x0000000000000974                exit
-                0x0000000000000974                _exit
+ .fini9         0x0000000000000a3e        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                0x0000000000000a3e                exit
+                0x0000000000000a3e                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -828,52 +817,53 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000000974        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000000a3e        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000000978                _etext = .
+                0x0000000000000a42                _etext = .
 
-.data           0x0000000000800100       0x10 load address 0x0000000000000978
+.data           0x0000000000800100       0x10 load address 0x0000000000000a42
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
- .data.my_states
-                0x0000000000800100        0x5 ./main.o
  *(.rodata)
  *(.rodata*)
  .rodata._ZTV13LiquidCrystal
-                0x0000000000800105        0xa ./LiquidCrystal.o
-                0x0000000000800105                vtable for LiquidCrystal
+                0x0000000000800100        0xa ./LiquidCrystal.o
+                0x0000000000800100                vtable for LiquidCrystal
+ .rodata._ZZ4mainE3C.0
+                0x000000000080010a        0x5 ./main.o
  *(.gnu.linkonce.d*)
                 0x0000000000800110                . = ALIGN (0x2)
  *fill*         0x000000000080010f        0x1 00
                 0x0000000000800110                _edata = .
                 0x0000000000800110                PROVIDE (__data_end, .)
 
-.bss            0x0000000000800110       0x1c
+.bss            0x0000000000800110       0x2f
                 0x0000000000800110                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.lcd       0x0000000000800110       0x13 ./main.o
+ .bss.lcd       0x0000000000800110       0x13 ./functions.o
                 0x0000000000800110                lcd
+ .bss.lcd       0x0000000000800123       0x13 ./main.o
  .bss.timer0_overflow_count
-                0x0000000000800123        0x4 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
-                0x0000000000800123                timer0_overflow_count
+                0x0000000000800136        0x4 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
+                0x0000000000800136                timer0_overflow_count
  .bss.timer0_millis
-                0x0000000000800127        0x4 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
-                0x0000000000800127                timer0_millis
+                0x000000000080013a        0x4 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
+                0x000000000080013a                timer0_millis
  .bss.timer0_fract
-                0x000000000080012b        0x1 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
+                0x000000000080013e        0x1 /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
  *(COMMON)
-                0x000000000080012c                PROVIDE (__bss_end, .)
-                0x0000000000000978                __data_load_start = LOADADDR (.data)
-                0x0000000000000988                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000000000080013f                PROVIDE (__bss_end, .)
+                0x0000000000000a42                __data_load_start = LOADADDR (.data)
+                0x0000000000000a52                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x000000000080012c        0x0
-                0x000000000080012c                PROVIDE (__noinit_start, .)
+.noinit         0x000000000080013f        0x0
+                0x000000000080013f                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x000000000080012c                PROVIDE (__noinit_end, .)
-                0x000000000080012c                _end = .
-                0x000000000080012c                PROVIDE (__heap_start, .)
+                0x000000000080013f                PROVIDE (__noinit_end, .)
+                0x000000000080013f                _end = .
+                0x000000000080013f                PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
  *(.eeprom*)
@@ -996,6 +986,7 @@ Symbol                                            File
 LiquidCrystal::LiquidCrystal(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ./LiquidCrystal.o
 LiquidCrystal::LiquidCrystal(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ./LiquidCrystal.o
                                                   ./main.o
+                                                  ./functions.o
 LiquidCrystal::LiquidCrystal(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ./LiquidCrystal.o
 LiquidCrystal::LiquidCrystal(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ./LiquidCrystal.o
 LiquidCrystal::LiquidCrystal(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ./LiquidCrystal.o
@@ -1144,10 +1135,10 @@ __do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avr5/li
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(WString.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(Print.o)
                                                   ./main.o
-                                                  ./functions.o
                                                   ./LiquidCrystal.o
 __do_global_ctors                                 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
                                                   ./main.o
+                                                  ./functions.o
 __epilogue_restores__                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
                                                   /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_usi_to_sf.o)
                                                   /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_sf_to_si.o)
@@ -1276,13 +1267,14 @@ free                                              /usr/lib/gcc/avr/4.3.5/../../.
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(WString.o)
 init                                              /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
                                                   ./main.o
-init_my_times(all_times*)                         ./functions.o
+init_all_my_times(all_times*)                     ./functions.o
                                                   ./main.o
 isspace                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(WString.o)
 itoa                                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(itoa.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(WString.o)
 lcd                                               ./main.o
+                                                  ./functions.o
 ltoa                                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(ltoa.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(WString.o)
 main                                              ./main.o
@@ -1291,10 +1283,6 @@ malloc                                            /usr/lib/gcc/avr/4.3.5/../../.
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(WString.o)
 micros                                            /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
 millis                                            /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring.o)
-                                                  ./functions.o
-my_states                                         ./main.o
-                                                  ./functions.o
-nextShootTime                                     ./main.o
                                                   ./functions.o
 pinMode                                           /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
                                                   ./main.o
@@ -1305,12 +1293,8 @@ port_to_mode_PGM                                  /home/r0oland/workspace/IVAT/E
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
 port_to_output_PGM                                /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(pins_arduino.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(wiring_digital.o)
-print_lcd(LiquidCrystal*)                         ./functions.o
+print_lcd()                                       ./functions.o
                                                   ./main.o
-remainingTime                                     ./main.o
-                                                  ./functions.o
-shootingReadyTime                                 ./main.o
-                                                  ./functions.o
 strcat                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcat.o)
                                                   /home/r0oland/workspace/IVAT/Eclipse_IDE/Arduino_Libs/Release/libArduino.a(WString.o)
 strchr                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strchr.o)

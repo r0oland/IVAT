@@ -27,12 +27,17 @@ int main()
 	//display the default setting in overview state
 	print_lcd(&lcd); //
 
-	all_times my_times;
-	init_my_times(&my_times);
+	state my_states =	{ 0, 0, true, true, YA };
+	all_times all_my_times;
+	memset (&all_my_times, 0 ,sizeof(all_my_times));
+
+	init_all_my_times(&all_my_times);
 
 	while (true)
 	{
-		control_state(&my_states, &my_times);
+		control_state(&my_states, &all_my_times);
 	}
 	return 0;
 }
+
+
